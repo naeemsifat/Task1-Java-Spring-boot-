@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.0.final using JasperReports Library version 6.20.0-2bc7ab61c56f459e8176eb05c7705e145cd400ad  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Card_Details" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="0dcbf9fa-ba5e-4b6c-a403-49ee2ebf7395">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="My Sql Data Adapter"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT * FROM customer_db.sample_file]]>
+	</queryString>
+	<field name="id" class="java.lang.Long">
+		<property name="com.jaspersoft.studio.field.name" value="id"/>
+		<property name="com.jaspersoft.studio.field.label" value="id"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="sample_file"/>
+	</field>
+	<field name="knit_card_balance" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.name" value="knit_card_balance"/>
+		<property name="com.jaspersoft.studio.field.label" value="knit_card_balance"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="sample_file"/>
+	</field>
+	<field name="knit_card_number" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="knit_card_number"/>
+		<property name="com.jaspersoft.studio.field.label" value="knit_card_number"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="sample_file"/>
+	</field>
+	<field name="knit_card_quantity" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.name" value="knit_card_quantity"/>
+		<property name="com.jaspersoft.studio.field.label" value="knit_card_quantity"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="sample_file"/>
+	</field>
+	<field name="requisition_quantity" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.name" value="requisition_quantity"/>
+		<property name="com.jaspersoft.studio.field.label" value="requisition_quantity"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="sample_file"/>
+	</field>
+	<field name="trnumber" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="trnumber"/>
+		<property name="com.jaspersoft.studio.field.label" value="trnumber"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="sample_file"/>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<columnHeader>
+		<band height="60" splitType="Stretch">
+			<staticText>
+				<reportElement positionType="Float" x="177" y="0" width="209" height="30" uuid="5db98b51-77fb-4af5-a3e2-f7f90feeb7a1">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="SansSerif" size="10"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<text><![CDATA[Card Details for Every Customer]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="24" y="37" width="74" height="23" uuid="67aed26b-49d1-4c37-9f7f-d77d6c937bb7"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="SansSerif" size="6"/>
+				</textElement>
+				<text><![CDATA[Coloumn Number]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="98" y="37" width="76" height="23" uuid="bd831b38-4530-4644-95db-ddc894203639"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="SansSerif" size="6"/>
+				</textElement>
+				<text><![CDATA[TRNUMBER]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="174" y="37" width="74" height="23" uuid="69431bd8-31bb-4040-b951-ecf1ff3394c6"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="SansSerif" size="6"/>
+				</textElement>
+				<text><![CDATA[KNIT_CARD_NUMBER]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="248" y="37" width="91" height="23" uuid="3ce64f48-fec4-4a79-b41f-310da501d626"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="SansSerif" size="6"/>
+				</textElement>
+				<text><![CDATA[REQUISITION_QUANTITY]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="419" y="37" width="90" height="23" uuid="4c4f7925-7ac6-464e-adf7-7fecf219f151"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="SansSerif" size="6"/>
+				</textElement>
+				<text><![CDATA[KNIT_CARD_BALANCE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="339" y="37" width="80" height="23" uuid="a108c7e9-9f05-4641-a72c-e083d885e804"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="SansSerif" size="6"/>
+				</textElement>
+				<text><![CDATA[KNIT_CARD_QUANTITY]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<textField textAdjust="ScaleFont">
+				<reportElement positionType="Float" x="24" y="0" width="74" height="20" uuid="a2807b47-34f9-41b5-83e3-1fa0de88798c"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="SansSerif" size="6"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{id}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="ScaleFont">
+				<reportElement positionType="Float" x="98" y="0" width="76" height="20" uuid="5190c23b-6c6f-4c6d-ad46-d7f2baec7d38"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="SansSerif" size="6"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{trnumber}!=null?$F{trnumber}:""]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="ScaleFont">
+				<reportElement positionType="Float" x="248" y="0" width="91" height="20" uuid="15d8a268-1cec-4ef9-aab2-1f74a62340f0"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="SansSerif" size="6"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{requisition_quantity}!=null?$F{requisition_quantity}:""]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="ScaleFont">
+				<reportElement positionType="Float" x="174" y="0" width="74" height="20" uuid="4fcf6f73-a88c-4bdd-ac13-52d8e65884ce"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="SansSerif" size="6"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{knit_card_number}!=null?$F{knit_card_number}:""]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="ScaleFont">
+				<reportElement positionType="Float" x="419" y="0" width="90" height="20" uuid="0dcbba09-679e-4cf9-a419-bb43bd554ecc"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="SansSerif" size="6"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{knit_card_balance}!=null?$F{knit_card_balance}:""]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="ScaleFont">
+				<reportElement positionType="Float" x="339" y="0" width="80" height="20" uuid="bad7a0c2-596c-4a3a-a652-8b11f050e79c"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="SansSerif" size="6"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{knit_card_quantity}!=null?$F{knit_card_quantity}:""]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>
