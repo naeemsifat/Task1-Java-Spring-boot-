@@ -11,10 +11,14 @@ This project is designed to read data from the `Sample_File.xls` Excel file and 
 
 ## Installation
 
-1. Clone the repository.
-2. Create a database named "customer_db".
-3. Update the `spring.datasource.username` and `spring.datasource.password` in `application.properties` with your MySQL credentials.
-4. Build and run the project.
+1. Clone this repository : https://github.com/naeemsifat/Task1-Java-Spring-boot-.git
+2. Go to the folder directory
+3. cd task
+4. git checkout task
+5. Install dependencies
+6. Create a database named "customer_db".
+7. Update the `spring.datasource.username` and `spring.datasource.password` in `application.properties` with your MySQL credentials.
+8. Build and run the project.
 
 ## Third-Party Libraries
 
