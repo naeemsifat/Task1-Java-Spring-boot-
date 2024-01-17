@@ -28,4 +28,5 @@ This project is designed to read data from the `Sample_File.xls` Excel file and 
 
 - Ensure the project is running.
 - Access the Swagger UI on: http://localhost:8024/swagger-ui/index.html.
+- Test it with the given Sample_File.xls and with the sheet named "Sheet1" from the workbook
 - Test the provided API endpoints for data processing.
